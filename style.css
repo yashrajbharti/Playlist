@@ -1,0 +1,100 @@
+:root {
+  --main-a-color: #ec3;
+  --main-b-color: #bc3e99;
+}
+
+body{
+background-color: var(--main-a-color);
+}
+
+.sideeffectspic, .newamericanapic, .madlovepic{
+  border: 2px solid #fff;
+  border-radius: 10px;
+  height: 229px;
+  width: 229px;
+  object-fit: cover;
+}
+
+body *{
+    font-family: "Freehand 521" !important;
+}
+h2{
+  text-align: center;
+}
+.side{
+  margin: 0;
+  font-size: 34px !important;
+}
+.chain{
+  color: #444;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.playSE, .pauseSE{
+  color: #eee;
+  height: 121px;
+  width: 121px;
+}
+ .next, .prev{
+   height: 71px;
+   width: 71px;
+   position: relative;
+   top:-17px;
+ }
+.pauseSE{
+  /* transform: translateY(-122px); */
+  opacity: 0;
+  position: relative;
+  left: -63px;
+}
+.playSE{
+  z-index: 2;
+  position: relative;
+  left: 63px;
+}
+.play, .pause{
+  opacity: 0;
+}
+.play-pause{
+visibility: hidden;
+}
+.progress{
+
+  background:  linear-gradient(to bottom, var(--main-a-color) 0%,var(--main-a-color) 35%,var(--main-a-color) 35%,var(--main-a-color) 40%,#000 40%,#000 53%,var(--main-a-color) 53%,var(--main-a-color) 60%,var(--main-a-color) 60%, var(--main-a-color) 100%) !important;
+  border-right: 4px solid #da275d;
+
+}
+.duration{
+  color: #da275d;
+  text-shadow: 1px 1px 0px rgba(218, 39, 93, 0.5) !important;
+}
+.loaded{
+  background:  linear-gradient(to bottom, var(--main-a-color) 0%,var(--main-a-color) 35%,var(--main-a-color) 35%,var(--main-a-color) 40%,#000 40%,#000 53%,var(--main-a-color) 53%,var(--main-a-color) 60%,var(--main-a-color) 60%, var(--main-a-color) 100%) !important;
+}
+
+.audiojs .scrubber{
+  background:  linear-gradient(to bottom, var(--main-a-color) 0%,var(--main-a-color) 35%,var(--main-a-color) 35%,var(--main-a-color) 40%,#ccc 40%,#ccc 53%,var(--main-a-color) 53%,var(--main-a-color) 60%,var(--main-a-color) 60%, var(--main-a-color) 100%) !important;
+
+}
+section{
+  background-color: rgba(255,255,255,0.1);
+  border: 10px solid rgba(255,255,255,0.03);
+  border-radius: 12px;
+
+}
+div#audiojs_wrapper1{
+  position: relative;
+  top:-13px;
+}
+.two, .three{
+  display: none;
+}
+.download .two{
+  display: none;
+}
+.download .three{
+  display: none;
+}
+.next:active, .prev:active{
+  filter: invert(0.9);
+}
